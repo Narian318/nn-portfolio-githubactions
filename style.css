@@ -1,0 +1,196 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --bg-main: black;
+            --bg-primary: lightgreen;
+        }
+        .web-head{
+            color: light;
+        }
+
+        html{
+            font-size: 62.5%;
+            font-family: "Lexend Deca Light";
+        }
+
+        body{
+            	#background-color:var(--bg-primary)
+		height: 100%;
+    		width: 100%;
+    		background-size: cover;
+   	 	background-repeat: no-repeat;
+    		background-image: url(nn-IToffice.jpeg);
+        }
+
+        a,li{
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--bg-primary);
+        }
+
+        header{
+            background-color: var(--bg-main);
+            height: 5rem;
+            color: var(--bg-primary);
+            display: grid;
+            place-items: center;
+        }
+
+        .container{
+            width: 80%;
+            height: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*background-color: red;*/
+        }
+
+
+        .container ul{
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            height: 10rem;
+        }
+
+        .container ul li{
+            height: 10rem;
+            line-height: 10rem;
+            position: relative;
+            cursor: pointer;
+            /*background-color: yellow;*/
+        }
+
+        .container ul li a:hover, .container ul li:hover{
+            color: orange;
+        }
+
+        .container .drop-down{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--bg-main);
+            height: auto;
+            min-width: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            gap: 1rem;
+            top: 10rem;
+            transition: all .3s linear;
+
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .container ul li:hover > .drop-down{
+            visibility: visible;
+            opacity: 1;
+            top: 8rem;
+        }
+
+        .container .drop-down li{
+            height: 3rem;
+            line-height: 3rem;
+            width: 100%;
+            text-align: center;
+            transition: all .3s linear;
+            /*border: 1px solid red;*/
+        }
+
+        .container .drop-down li:hover{
+            background-color: var(--bg-primary);
+        }
+	    .menu-icon{
+    	     display: none;
+	}
+
+	    .menu-icon i{
+    	     color: #fff;
+    	     font-size: 30px;
+	}
+	
+	@media (max-width:600px) {
+    	nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    	nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+	    .menu-icon{
+             display: block;
+    	}
+    	    #menuList{
+             transition: all 0.5s;
+    	}
+
+
+        /*hero sectoin style */
+        h4 {
+            font-size: clamp(1.2rem, 1rem + 3vw, 2.5rem);
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            color: yellowgreen;
+        }
+
+        h5 {
+            font-size: clamp(1.25rem, 1rem + 3vw, 2.5rem);
+            font-weight: 400;
+            line-height: 1.6;
+            color: orange;
+        }
+
+        .hero-btn {
+            margin: 6rem;
+            padding: 1rem 2rem;
+            color: var(orange);
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.6;
+            border: 1px solid var(black);
+            border-radius: 1rem;
+            transition: background-color 300ms;
+            box-shadow: 3px 3px 3px;
+        }
+
+        .hero-btn:focus,
+        .hero-btn:hover {
+            background: var(blueviolet);
+            cursor: pointer;
+        }
+
+        .hero {
+            display: grid;
+            height: 70rem;
+           
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .hero > * {
+            grid-area: 1 / -1;
+        }
+
+        .hero__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: goldenrod;
+        }

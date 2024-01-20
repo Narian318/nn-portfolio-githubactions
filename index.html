@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NN's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <h4 class="web-head">Naren's IT Hub</h4>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#"> Home </a></li>
+            <li>
+              Profile
+              <ul class="drop-down">
+                <li><a href="./profile.html"> Profile </a></li>
+                <li><a href="./bio.html"> Bio-data</a></li>
+              </ul>
+            </li>
+            <li><a href="./myCV.html"> My CV </a></li>
+            <li>
+              <a href="./nn-certificates.html">Certificates </a>
+            </li>
+            <li>
+              My Projects
+              <ul class="drop-down">
+                <li>
+                  <a href="projects.html"> DEVOPS Projects </a>
+                  <li><a href="./practice.html"> my-practice</a></li>
+                  <li>
+                    <a href="https://naren-cloud.hashnode.dev/"
+                      >My Blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@Naren-QuickDevopsChannel"
+                      >My Youtube</a
+                    >
+                  </li>
+                </li>
+              </ul>
+            </li>
+            <li>
+              My Previous Jobs' links
+              <ul class="drop-down">
+                <li>
+                  <a href="https://ddpdoo.gov.in/units/HVF"
+                    >Heavy Vehicles Factory</a
+                  >
+                </li>
+                <li>
+                  <a href="https://ddpdoo.gov.in/units/OFCH"
+                    >Ordnance Factory Chanda</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.apsrtc.ap.gov.in/">A.P.S.R.T.C</a>
+                </li>
+                <li><a href="https://www.medha.com">www.medha.com</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./contact.html"> My Contact </a></li>
+            <!-- <li>
+              <a href="./payment/index.html"> Payment </a>
+            </li> -->
+          </ul>
+	<div class="menu-icon">
+        	<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      	</div>
+        </nav>
+      </div>
+    </header>
+	    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--hero section -->
+    <section class="hero">
+      <div class="hero__content">
+        <h4>Hi I'm Narendra</h4>
+        <h5>Welcome to my IT cabin</h5>
+        <button class="hero-btn">Collaborate</button>
+      </div>
+    </section>
+  </body>
+</html>
